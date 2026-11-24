@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen | Student & Aspiring Software Engineer Portfolio</title>
+    
+    <!-- SEO and Social Metadata -->
+    <meta name="description" content="Portfolio of Alex Chen, Computer Science student and aspiring frontend developer showcasing projects in web development, vanilla JavaScript, and modern UI/UX design.">
+    <meta name="keywords" content="Student Portfolio, Frontend Developer, Web Development, Computer Science, HTML5, CSS3, JavaScript">
+    <meta name="author" content="Alex Chen">
+    <meta property="og:title" content="Alex Chen | Student & Aspiring Software Engineer Portfolio">
+    <meta property="og:description" content="Explore my student portfolio featuring modern web apps, technical skills, and academic achievements.">
+    <meta property="og:type" content="website">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- =================================================================
+         1. NAVIGATION BAR
+         ================================================================= -->
+    <header class="header" id="header">
+        <nav class="navbar container" aria-label="Main Navigation">
+            <a href="#home" class="nav-logo" aria-label="Alex Chen Portfolio Home">
+                <span class="logo-bracket">&lt;</span>Alex<span class="logo-accent">Chen</span><span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <!-- Desktop & Mobile Navigation Links -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Controls: Theme Toggle & Hamburger Button -->
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Switch to light theme" title="Toggle theme">
+                    <!-- Sun Icon (for light mode switch) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon (for dark mode switch) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button id="navToggle" class="nav-toggle-btn" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- =============================================================
+             2. HERO SECTION
+             ============================================================= -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="hero-badge">
+                        <span class="status-indicator"></span>
+                        <span>Open to Internship &amp; Project Opportunities</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hello, I'm <span class="gradient-text">Alex Chen</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Computer Science Student &amp; <span class="typing-highlight">Frontend Developer</span>
+                    </h2>
+                    <p class="hero-description">
+                        Passionate about crafting clean, accessible, and high-performance web interfaces. Focused on bridging the gap between elegant UI/UX design and structured software engineering fundamentals.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Me</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Quick Social Link Bar -->
+                    <div class="hero-socials">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub Profile">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn Profile">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:alex.chen.dev@example.com" class="social-icon-link" aria-label="Send Email">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Graphic / Avatar Showcase -->
+                <div class="hero-visual reveal">
+                    <div class="avatar-card">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar-frame">
+                            <!-- High Quality Modern Vector Avatar -->
+                            <svg class="avatar-svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Alex Chen Vector Portrait">
+                                <defs>
+                                    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="var(--accent-primary)"/>
+                                        <stop offset="100%" stop-color="var(--accent-gradient-end)"/>
+                                    </linearGradient>
+                                    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e293b"/>
+                                        <stop offset="100%" stop-color="#0f172a"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="100" cy="100" r="95" fill="url(#avatarBg)" opacity="0.15"/>
+                                <circle cx="100" cy="100" r="85" fill="var(--bg-surface)"/>
+                                <!-- Shoulders / Body -->
+                                <path d="M45 185 C45 145, 70 135, 100 135 C130 135, 155 145, 155 185 Z" fill="url(#shirtGrad)"/>
+                                <!-- Neck -->
+                                <rect x="88" y="115" width="24" height="25" rx="4" fill="#fcd34d"/>
+                                <!-- Face -->
+                                <ellipse cx="100" cy="90" rx="36" ry="42" fill="#fde68a"/>
+                                <!-- Hair -->
+                                <path d="M64 85 C62 55, 80 42, 100 42 C125 42, 140 55, 136 85 C128 72, 115 68, 100 68 C85 68, 72 74, 64 85 Z" fill="#1e1b4b"/>
+                                <!-- Eyes -->
+                                <circle cx="86" cy="88" r="4" fill="#0f172a"/>
+                                <circle cx="114" cy="88" r="4" fill="#0f172a"/>
+                                <!-- Glasses Frame -->
+                                <rect x="74" y="78" width="24" height="20" rx="6" fill="none" stroke="var(--accent-primary)" stroke-width="3"/>
+                                <rect x="102" y="78" width="24" height="20" rx="6" fill="none" stroke="var(--accent-primary)" stroke-width="3"/>
+                                <line x1="98" y1="88" x2="102" y2="88" stroke="var(--accent-primary)" stroke-width="3"/>
+                                <!-- Smile -->
+                                <path d="M90 108 Q100 118 110 108" fill="none" stroke="#b45309" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        
+                        <!-- Floating Tech Tags Around Avatar -->
+                        <div class="floating-badge badge-top-left" aria-hidden="true">
+                            <span class="badge-dot js-dot"></span> JavaScript
+                        </div>
+                        <div class="floating-badge badge-top-right" aria-hidden="true">
+                            <span class="badge-dot html-dot"></span> HTML5 / CSS3
+                        </div>
+                        <div class="floating-badge badge-bottom" aria-hidden="true">
+                            <span class="badge-dot py-dot"></span> Python &amp; CS
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================================
+             3. ABOUT ME SECTION
+             ============================================================= -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">// 01. Overview</span>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">My journey, passion for building software, and what drives my work.</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Column 1: Narrative -->
+                    <div class="about-text-column reveal">
+                        <h3 class="about-lead">
+                            A curious Computer Science student dedicated to creating intuitive, responsive web experiences.
+                        </h3>
+                        <p class="about-paragraph">
+                            I am currently pursuing my Bachelor of Science in Computer Science. My interest in software engineering started when I built my first HTML page and realized how code can transform an idea into an interactive digital product accessible to anyone in the world.
+                        </p>
+                        <p class="about-paragraph">
+                            My core technical focus centers on <strong>modern frontend engineering</strong> using semantic HTML5, CSS3 architecture, and vanilla JavaScript (ES6+). In addition, my coursework in algorithms, data structures, and object-oriented programming with Python and Java gives me a solid computational foundation.
+                        </p>
+                        <p class="about-paragraph">
+                            <strong>Career Objective:</strong> To secure a frontend or software engineering internship where I can contribute to meaningful real-world projects, learn from senior developers, and build performant, user-centered applications.
+                        </p>
+                    </div>
+
+                    <!-- Column 2: Highlights & Quick Facts -->
+                    <div class="about-highlights-column reveal">
+                        <div class="highlight-cards">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                    </svg>
+                                </div>
+                                <div class="highlight-details">
+                                    <h4 class="highlight-title">Current Education</h4>
+                                    <p class="highlight-desc">3rd Year B.S. in Computer Science (Graduating 2027)</p>
+                                </div>
+                            </div>
+
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="highlight-details">
+                                    <h4 class="highlight-title">Problem Solving</h4>
+                                    <p class="highlight-desc">150+ coding challenges solved across Data Structures &amp; Algorithms</p>
+                                </div>
+                            </div>
+
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                </div>
+                                <div class="highlight-details">
+                                    <h4 class="highlight-title">Clean Code Philosophy</h4>
+                                    <p class="highlight-desc">Writing semantic, accessible, well-documented, and modular code</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Info Specs -->
+                        <div class="quick-specs-table">
+                            <div class="spec-row">
+                                <span class="spec-label">Location:</span>
+                                <span class="spec-value">Bengaluru, India (Open to Remote)</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Specialization:</span>
+                                <span class="spec-value">Frontend Web &amp; Core Software</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Interests:</span>
+                                <span class="spec-value">UI/UX Design, Open Source, System Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================================
+             4. SKILLS SECTION
+             ============================================================= -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">// 02. Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">A collection of tools, technologies, and methodologies I work with.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Frontend Development -->
+                    <div class="skill-category-card reveal">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                            <h3 class="category-title">Frontend Engineering</h3>
+                        </div>
+                        <div class="skills-list">
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 &amp; Semantic Web</span>
+                                    <span class="skill-level">Proficient (90%)</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 Proficiency">
+                                    <div class="skill-bar-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS3, Flexbox &amp; Grid</span>
+                                    <span class="skill-level">Proficient (88%)</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 Proficiency">
+                                    <div class="skill-bar-fill" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Vanilla JavaScript (ES6+)</span>
+                                    <span class="skill-level">Advanced (82%)</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript Proficiency">
+                                    <div class="skill-bar-fill" style="width: 82%;"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Responsive Design &amp; Accessibility</span>
+                                    <span class="skill-level">Proficient (85%)</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Responsive Design Proficiency">
+                                    <div class="skill-bar-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Programming Languages -->
+                    <div class="skill-category-card reveal">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="category-title">Core Programming</h3>
+                        </div>
+                        <div class="skills-list">
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python (Data &amp; Scripting)</span>
+                                    <span class="skill-level">Intermediate (80%)</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Python Proficiency">
+                                    <div class="skill-bar-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java &amp; OOP Concepts</span>
+                                    <span class="skill-level">Intermediate (75%)</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Java Proficiency">
+                                    <div class="skill-bar-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Data Structures &amp; Algorithms</span>
+                                    <span class="skill-level">Intermediate (78%)</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="DSA Proficiency">
+                                    <div class="skill-bar-fill" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL &amp; Relational Databases</span>
+                                    <span class="skill-level">Foundational (70%)</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="SQL Proficiency">
+                                    <div class="skill-bar-fill" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Developer Tools & Workflow -->
+                    <div class="skill-category-card reveal">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="category-title">Tools &amp; Workflow</h3>
+                        </div>
+                        <div class="skills-list">
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git &amp; GitHub (Version Control)</span>
+                                    <span class="skill-level">Proficient (85%)</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Git Proficiency">
+                                    <div class="skill-bar-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS Code &amp; Extensions</span>
+                                    <span class="skill-level">Advanced (90%)</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="VS Code Proficiency">
+                                    <div class="skill-bar-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Browser DevTools &amp; Debugging</span>
+                                    <span class="skill-level">Proficient (85%)</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="DevTools Proficiency">
+                                    <div class="skill-bar-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Command Line &amp; PowerShell</span>
+                                    <span class="skill-level">Intermediate (76%)</span>
+                                </div>
+                                <div class="skill-bar-track" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" aria-label="CLI Proficiency">
+                                    <div class="skill-bar-fill" style="width: 76%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================================
+             5. PROJECTS SECTION
+             ============================================================= -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">// 03. Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real-world applications built with clean code and modern user experience.</p>
+                </div>
+
+                <!-- Category Filter Buttons -->
+                <div class="project-filters reveal" role="tablist" aria-label="Filter projects by category">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+                    <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Applications</button>
+                    <button class="filter-btn" data-filter="js" role="tab" aria-selected="false">Vanilla JavaScript</button>
+                    <button class="filter-btn" data-filter="python" role="tab" aria-selected="false">Python &amp; Core</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Project 1 -->
+                    <article class="project-card reveal" data-category="web js" data-id="planner">
+                        <div class="project-card-header">
+                            <div class="project-icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                                    <path d="M9 14l2 2 4-4"></path>
+                                </svg>
+                            </div>
+                            <span class="project-category-tag">Web App / JS</span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">Interactive Study &amp; Task Planner</h3>
+                            <p class="project-description">
+                                A comprehensive productivity application for students featuring priority tagging, local storage persistence, date filtering, and completion statistics.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS Grid</span>
+                                <span class="tag">Vanilla JS</span>
+                                <span class="tag">LocalStorage</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <button class="btn btn-outline btn-sm btn-view-project" data-project="planner">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                </svg>
+                                <span>View Project</span>
+                            </button>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" aria-label="GitHub Repository for Study Planner">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card reveal" data-category="web" data-id="weather">
+                        <div class="project-card-header">
+                            <div class="project-icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                                </svg>
+                            </div>
+                            <span class="project-category-tag">Web Application</span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">Responsive Weather &amp; Forecast Hub</h3>
+                            <p class="project-description">
+                                A dynamic weather portal with city search, temperature unit switching (C/F), 5-day forecast previews, and adaptive sky color themes based on time of day.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS Flexbox</span>
+                                <span class="tag">Asynchronous JS</span>
+                                <span class="tag">DOM API</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <button class="btn btn-outline btn-sm btn-view-project" data-project="weather">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                </svg>
+                                <span>View Project</span>
+                            </button>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" aria-label="GitHub Repository for Weather Hub">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card reveal" data-category="js" data-id="algorithm">
+                        <div class="project-card-header">
+                            <div class="project-icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                </svg>
+                            </div>
+                            <span class="project-category-tag">Vanilla JavaScript</span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">Sorting Algorithm Visualizer</h3>
+                            <p class="project-description">
+                                An educational visualizer illustrating Bubble Sort, Selection Sort, and Insertion Sort in real time with controllable speed sliders, array size generators, and step counters.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript (ES6)</span>
+                                <span class="tag">CSS Transitions</span>
+                                <span class="tag">Algorithms</span>
+                                <span class="tag">Audio Synth API</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <button class="btn btn-outline btn-sm btn-view-project" data-project="algorithm">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                </svg>
+                                <span>View Project</span>
+                            </button>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" aria-label="GitHub Repository for Algorithm Visualizer">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card reveal" data-category="python" data-id="expense">
+                        <div class="project-card-header">
+                            <div class="project-icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                    <line x1="6" y1="8" x2="6" y2="8"></line>
+                                    <line x1="10" y1="8" x2="18" y2="8"></line>
+                                    <line x1="6" y1="12" x2="6" y2="12"></line>
+                                    <line x1="10" y1="12" x2="18" y2="12"></line>
+                                    <line x1="6" y1="16" x2="6" y2="16"></line>
+                                    <line x1="10" y1="16" x2="14" y2="16"></line>
+                                </svg>
+                            </div>
+                            <span class="project-category-tag">Python &amp; Core</span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">Student Budget &amp; Expense Engine</h3>
+                            <p class="project-description">
+                                A Python CLI and web-based financial ledger for students with CSV statement parsing, category budgeting, spending warnings, and automated expense charts.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python 3</span>
+                                <span class="tag">CSV Processing</span>
+                                <span class="tag">Data Analysis</span>
+                                <span class="tag">Web UI</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <button class="btn btn-outline btn-sm btn-view-project" data-project="expense">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                </svg>
+                                <span>View Project</span>
+                            </button>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" aria-label="GitHub Repository for Expense Tracker">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Empty filter state notice -->
+                <div id="noProjectsMessage" class="no-projects-notice" style="display: none;">
+                    <p>No projects found in this category.</p>
+                    <button class="btn btn-secondary btn-sm" id="resetFilterBtn">View All Projects</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================================
+             6. EDUCATION SECTION (Vertical Academic Timeline)
+             ============================================================= -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">// 04. Academics</span>
+                    <h2 class="section-title">Education Journey</h2>
+                    <p class="section-subtitle">Academic timeline and foundational computer science learning.</p>
+                </div>
+
+                <div class="timeline reveal">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-period">2023 - 2027 (Expected)</span>
+                                <span class="timeline-badge">Current Degree</span>
+                            </div>
+                            <h3 class="timeline-degree">Bachelor of Science in Computer Science</h3>
+                            <h4 class="timeline-school">National Institute of Technology / University</h4>
+                            <p class="timeline-description">
+                                Maintaining strong academic standing with a focused curriculum in Software Engineering, Analysis of Algorithms, Object-Oriented Design, and Web Systems.
+                            </p>
+                            <div class="timeline-details">
+                                <div class="detail-item"><strong>Current CGPA:</strong> 8.8 / 10.0</div>
+                                <div class="detail-item"><strong>Key Coursework:</strong> Data Structures &amp; Algorithms, Database Management Systems, Web Technologies, Operating Systems, Computer Networks.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-period">2021 - 2023</span>
+                                <span class="timeline-badge">Pre-University</span>
+                            </div>
+                            <h3 class="timeline-degree">Senior Secondary (PCMC - Physics, Chemistry, Math, Computer Science)</h3>
+                            <h4 class="timeline-school">Delhi Public School / Pre-University College</h4>
+                            <p class="timeline-description">
+                                Graduated with distinction in the Computer Science stream. Completed foundational programming projects in Python and C++ logic.
+                            </p>
+                            <div class="timeline-details">
+                                <div class="detail-item"><strong>Score:</strong> 94.2% Distinction</div>
+                                <div class="detail-item"><strong>Honors:</strong> School STEM Fair 1st Prize for automated student attendance demo.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-period">2021</span>
+                                <span class="timeline-badge">High School</span>
+                            </div>
+                            <h3 class="timeline-degree">Secondary School Certificate (Class X)</h3>
+                            <h4 class="timeline-school">Central Board of Secondary Education</h4>
+                            <p class="timeline-description">
+                                Achieved exemplary grades with a strong affinity for mathematics and natural sciences, establishing an early interest in computer technology.
+                            </p>
+                            <div class="timeline-details">
+                                <div class="detail-item"><strong>Score:</strong> 95.0% Overall Aggregate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================================
+             7. CERTIFICATIONS AND ACHIEVEMENTS
+             ============================================================= -->
+        <section id="certifications" class="section cert-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">// 05. Milestones</span>
+                    <h2 class="section-title">Certifications &amp; Achievements</h2>
+                    <p class="section-subtitle">Formal credentials and recognitions earned along my learning path.</p>
+                </div>
+
+                <div class="cert-grid">
+                    <!-- Cert Card 1 -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <div class="cert-content">
+                            <span class="cert-issuer">Meta / Coursera</span>
+                            <h3 class="cert-title">Meta Front-End Developer Specialization</h3>
+                            <p class="cert-date">Completed: October 2024</p>
+                            <p class="cert-skills"><strong>Topics Covered:</strong> HTML5 semantics, modern responsive CSS, JavaScript programming, version control with Git, and UI wireframing.</p>
+                            <div class="cert-badge">Credential Verified</div>
+                        </div>
+                    </div>
+
+                    <!-- Cert Card 2 -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="cert-content">
+                            <span class="cert-issuer">University of Michigan</span>
+                            <h3 class="cert-title">Python for Everybody Specialization</h3>
+                            <p class="cert-date">Completed: July 2024</p>
+                            <p class="cert-skills"><strong>Topics Covered:</strong> Data structures in Python, accessing web data with APIs, JSON/XML parsing, and SQL database integration.</p>
+                            <div class="cert-badge">Credential Verified</div>
+                        </div>
+                    </div>
+
+                    <!-- Cert Card 3 -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <div class="cert-content">
+                            <span class="cert-issuer">Harvard Online (CS50x)</span>
+                            <h3 class="cert-title">CS50: Introduction to Computer Science</h3>
+                            <p class="cert-date">Completed: March 2024</p>
+                            <p class="cert-skills"><strong>Topics Covered:</strong> Computational thinking, memory management in C, algorithmic time complexity, web foundations, and database design.</p>
+                            <div class="cert-badge">Credential Verified</div>
+                        </div>
+                    </div>
+
+                    <!-- Cert Card 4 (Achievement) -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon-wrapper highlight-gold">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <div class="cert-content">
+                            <span class="cert-issuer">University Tech Fest</span>
+                            <h3 class="cert-title">Hackathon Finalist - Top 5 Team</h3>
+                            <p class="cert-date">Awarded: January 2025</p>
+                            <p class="cert-skills"><strong>Achievement:</strong> Built an accessible campus navigation prototype within 24 hours that was recognized among 60+ university teams.</p>
+                            <div class="cert-badge award-badge">Honors Award</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================================
+             8. CONTACT SECTION
+             ============================================================= -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">// 06. Communication</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Have a project, internship opportunity, or question? Send me a message!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Column 1: Contact Information Cards -->
+                    <div class="contact-info reveal">
+                        <h3 class="contact-lead">Let's build something exceptional together</h3>
+                        <p class="contact-text">
+                            I am actively seeking internship opportunities for 2026/2027 and eager to collaborate on frontend, open-source, or student engineering projects. Feel free to connect via the form or through my social channels.
+                        </p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="info-meta">
+                                    <span class="meta-label">Email</span>
+                                    <a href="mailto:alex.chen.dev@example.com" class="meta-value">alex.chen.dev@example.com</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="info-meta">
+                                    <span class="meta-label">Location</span>
+                                    <span class="meta-value">Bengaluru, India (Open to Remote / Relocation)</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="info-meta">
+                                    <span class="meta-label">Response Time</span>
+                                    <span class="meta-value">Usually within 24 hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Links (Editable) -->
+                        <div class="social-links-box">
+                            <span class="social-box-title">Find Me Online:</span>
+                            <div class="social-box-icons">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter / X Profile">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                    <span>Twitter / X</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Functional Validated Contact Form -->
+                    <div class="contact-form-card reveal">
+                        <h3 class="form-card-title">Send a Direct Message</h3>
+
+                        <!-- Feedback Message Banner -->
+                        <div id="formAlert" class="form-alert" role="alert" style="display: none;"></div>
+
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="userName" class="form-label">Full Name <span class="required">*</span></label>
+                                <input type="text" id="userName" name="name" class="form-control" placeholder="e.g. Maya Sharma" required autocomplete="name">
+                                <span class="form-error-msg" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userEmail" class="form-label">Email Address <span class="required">*</span></label>
+                                <input type="email" id="userEmail" name="email" class="form-control" placeholder="e.g. maya@example.com" required autocomplete="email">
+                                <span class="form-error-msg" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userSubject" class="form-label">Subject</label>
+                                <input type="text" id="userSubject" name="subject" class="form-control" placeholder="e.g. Internship Inquiry / Project Collaboration">
+                                <span class="form-error-msg" id="subjectError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="label-with-counter">
+                                    <label for="userMessage" class="form-label">Your Message <span class="required">*</span></label>
+                                    <span class="char-counter" id="charCounter">0 / 500</span>
+                                </div>
+                                <textarea id="userMessage" name="message" class="form-control" rows="5" placeholder="Share your message or project requirements..." maxlength="500" required></textarea>
+                                <span class="form-error-msg" id="messageError"></span>
+                            </div>
+
+                            <button type="submit" id="submitBtn" class="btn btn-primary btn-block">
+                                <span class="btn-text">Send Message</span>
+                                <svg class="btn-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =================================================================
+         9. FOOTER
+         ================================================================= -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Alex<span class="logo-accent">Chen</span><span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-tagline">Crafting modern, accessible web interfaces one line of code at a time.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Alex Chen. Built with semantic HTML5, modern CSS3, and vanilla JavaScript.</p>
+                <button id="backToTopBtn" class="back-to-top" aria-label="Back to top of page" title="Back to top">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =================================================================
+         10. PROJECT DETAILS MODAL DIALOG (Interactive Walkthrough)
+         ================================================================= -->
+    <div id="projectModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">&times;</button>
+            
+            <div class="modal-header">
+                <span class="modal-category" id="modalCategory">Category</span>
+                <h3 class="modal-title" id="modalTitle">Project Title</h3>
+            </div>
+
+            <div class="modal-body">
+                <p class="modal-description" id="modalDescription">Detailed description will load here.</p>
+                
+                <h4 class="modal-subheading">Key Highlights &amp; Features:</h4>
+                <ul class="modal-features-list" id="modalFeatures">
+                    <!-- Loaded dynamically -->
+                </ul>
+
+                <h4 class="modal-subheading">Tech Stack Used:</h4>
+                <div class="modal-tags" id="modalTags">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" id="modalDismissBtn">Close</button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="modalGithubLink">
+                    <span>View on GitHub</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Vanilla JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
